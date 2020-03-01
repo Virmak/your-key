@@ -38,6 +38,7 @@ header {
     padding: 5px 30px;
     border-radius: 8px;
     font-weight: 800;
+    text-align: center;
 }
 
 .btn-success {
@@ -135,7 +136,9 @@ main > div:first-child {
 
 
 
-
+.mt-19 {
+    margin-top: 19px;
+}
 
 h1, h3 {
     margin: 0;
@@ -185,26 +188,50 @@ h1, h3 {
 }
 
 
+.form-group {
+    margin: 10px;
+}
 
 .form-group select {
     background-color: #fff;
 }
 
-.book-main .form-group select {
+.form-group select {
     min-width: 200px;
     width: 100%;
     padding: 5px;
 }
 
+.post-section {
+    text-align: left;
+    padding: 20px;
+}
+
+.post-section .flex {
+    justify-content: flex-start;
+}
 
 
-@media  only screen and (max-width: 450px) {
+
+@media  only screen and (max-width: 650px) {
     header ul{
         display: none;
     }
-
     .menu-toggle {
         display: block;
+    }
+
+    .book-main .flex > * {
+        margin: 10px 0;
+    }
+
+    .form-group {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .btn.mt-19 {
+        margin-top: 0;
     }
 }
 
@@ -213,6 +240,4 @@ h1, h3 {
     .flex {
         justify-content: center;
     }
-
-    
 }

@@ -28,7 +28,7 @@
             <li>Login</li>
             <li><a href="book.html">Book a service</a></li>
         </ul>
-        <img onclick="toggleMenu()" class="menu-toggle" src="img/menu.svg" alt="">
+        <img class="menu-toggle" src="img/menu.svg" alt="">
     </header>
 
      <div class="menu-collapse">
@@ -49,30 +49,22 @@
             <div class="flex">
             
                 <div class="form-group">
-                    <label for="workType">What type of worker do you need?</label>
+                    <label for="workType">Is it an emergency?</label>
                     <select name="workType" id="workType">
 
-                        <option value="plumber">Plumber</option>
-                        <option value="Gardener">Gardener</option>
-                        <option value="Gardener">Electricity</option>
-                        <option value="Gardener">Cleaning</option>
+                        <option value="plumber">Yes</option>
+                        <option value="Gardener">No</option>
                     
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="location">What type of worker do you need?</label>
-                    <select name="location" id="location">
-
-                        <option value="sfax">Sfax</option>
-                        <option value="tunis">Tunis</option>
-                        <option value="sousse">Sousse</option>
-                    
-                    </select>
+                    <label for="location">Describe your project</label>
+                    <input type="text">
                 </div>
 
                 <div class="form-group">
-                    <a class="btn btn-success mt-19" href="#">NEXT STEP</a>
+                    <a class="btn btn-info mt-19" href="#">POST JOB</a>
                 </div>
             
             </div>

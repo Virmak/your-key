@@ -42,9 +42,13 @@ header {
 }
 
 .btn-success {
-    background-color: #555;
     color: white;
     background-color: var(--success);
+}
+
+.btn-info {
+    color: white;
+    background-color: var(--dark-text);
 }
 
 header > div:first-child {
@@ -80,6 +84,10 @@ main.landing {
     background-attachment: cover;
     background-size: cover;    
     color: #ffffff;
+}
+
+.accent {
+    color: var(--accent-color);
 }
 
 main a.action-btn {
@@ -196,7 +204,7 @@ h1, h3 {
     background-color: #fff;
 }
 
-.form-group select {
+.form-group select,input {
     min-width: 200px;
     width: 100%;
     padding: 5px;
@@ -205,6 +213,7 @@ h1, h3 {
 .post-section {
     text-align: left;
     padding: 20px;
+    background-color: #f0f0f0;
 }
 
 .post-section .flex {
@@ -214,6 +223,9 @@ h1, h3 {
 .menu-collapse {
     display: none;
     z-index: 100;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
 }
 
 .menu-collapse ul {

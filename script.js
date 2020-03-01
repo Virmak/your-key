@@ -15,5 +15,3 @@ const toggleMenu = () => {
     menuOpened = !menuOpened;
 
 }
-
-document.addEventListener

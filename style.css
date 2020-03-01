@@ -1,0 +1,218 @@
+:root {
+    --bg-color: #f7f7f7;
+    --accent-color: #6324f7;
+    --light-bg: #e3e1f6;
+    --dark-text: #18278e;
+    --dark-gray: #646464;
+
+    --success: #84b818;
+}
+
+html, body {
+    font-family: 'Nunito';
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+}
+
+.menu-toggle {
+    height:25px;
+    display: none;
+    padding: 10px 0;
+}
+
+
+.btn {
+    text-decoration: none;
+    padding: 5px 30px;
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+.btn-success {
+    background-color: #555;
+    color: white;
+    background-color: var(--success);
+}
+
+header > div:first-child {
+    display: flex;
+}
+
+header > div:first-child > .brand {
+    padding: 10px;
+    color: var(--dark-text);
+    font-weight: 800;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+main.landing {
+    padding: 190px 30px;
+    text-align: center;
+    background-image: url(img/bg.jpg);
+    background-attachment: cover;
+    background-size: cover;    
+    color: #ffffff;
+}
+
+main a.action-btn {
+    text-decoration: none;
+    background-color: var(--accent-color);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+main h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+main h2 {
+    margin: 0;
+}
+
+main > div:first-child {
+    padding: 10px;
+    background-color: #00000042;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.cards {
+    margin: 30px;
+}
+
+.card img {
+    height: 30px;
+}
+
+
+.card {
+    text-align: center;
+    padding: 20px 35px;
+    margin: 10px;
+    box-shadow: -1px 2px 21px -4px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    box-shadow: -1px 2px 21px 2px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+h1, h3 {
+    margin: 0;
+}
+
+.main-section {
+    height: 500px;
+    background-image: url(img/person-holding-the-door-3615723.jpg);
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.book-main {
+    padding: 20px;
+    text-align: left;
+    max-width: 750px;
+    margin: auto 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.book-main .flex {
+    justify-content: flex-start;
+}
+
+.book-main .flex > * {
+    margin: 15px;
+}
+
+.book-main .flex > *:first-child {
+    margin-left: 0;
+}
+
+.form-group > * {
+    display: block;
+}
+
+.form-group label,div {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+
+.form-group select {
+    background-color: #fff;
+}
+
+.book-main .form-group select {
+    min-width: 200px;
+    width: 100%;
+    padding: 5px;
+}
+
+
+
+@media  only screen and (max-width: 450px) {
+    header ul{
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+@media(min-width: 500px) {
+    .flex {
+        justify-content: center;
+    }
+
+    
+}
